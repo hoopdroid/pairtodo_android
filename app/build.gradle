@@ -1,0 +1,79 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+apply plugin: 'realm-android'
+
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.3'
+    defaultConfig {
+        applicationId "com.pairtodobeta"
+        minSdkVersion 21
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    def supportLibVersion = '25.3.1'
+
+    compile "com.android.support:appcompat-v7:$supportLibVersion"
+    compile "com.android.support:cardview-v7:$supportLibVersion"
+
+    compile 'com.squareup.picasso:picasso:2.5.2'
+
+    compile 'com.github.florent37:picassopalette:2.0.0'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.squareup.retrofit2:retrofit:2.2.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.2.0'
+    compile 'com.squareup.okhttp3:okhttp:3.6.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.6.0'
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.squareup.okhttp:okhttp:2.4.0'
+    compile 'com.mikhaellopez:circularimageview:3.0.2'
+    compile 'com.tapadoo.android:alerter:1.0.7'
+    compile 'com.facebook.stetho:stetho:1.4.2'
+    compile 'com.uphyca:stetho_realm:2.0.0'
+    compile 'com.vk:androidsdk:1.6.8'
+    compile 'com.facebook.android:facebook-android-sdk:4.21.1'
+    compile 'com.github.stfalcon:chatkit:0.1.0'
+    compile 'com.redmadrobot:inputmask:2.2.1'
+    compile 'com.github.lawloretienne:discreteslider:0.0.9'
+    compile 'com.github.curioustechizen.android-ago:library:1.3.2'
+    compile 'uk.co.chrisjenx:calligraphy:2.2.0'
+    compile 'me.grantland:autofittextview:0.2.1'
+    compile 'com.github.chrisbanes:PhotoView:2.0.0'
+    compile 'com.roughike:bottom-bar:2.1.2'
+    compile 'com.github.florent37:diagonallayout:1.0.4'
+    compile 'com.github.jkwiecien:EasyImage:1.3.1'
+    compile 'io.hypertrack:smart-scheduler:0.0.3'
+    compile 'com.google.firebase:firebase-core:10.2.1'
+    compile 'com.google.firebase:firebase-crash:10.2.1'
+    compile 'com.google.firebase:firebase-messaging:10.2.1'
+    compile 'io.reactivex:rxjava:1.2.4'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    provided 'com.google.auto.value:auto-value:1.2'
+    annotationProcessor 'com.google.auto.value:auto-value:1.2'
+    annotationProcessor 'com.ryanharter.auto.value:auto-value-gson:0.4.5'
+    apt 'com.gabrielittner.auto.value:auto-value-with:1.0.0'
+    provided 'com.ryanharter.auto.value:auto-value-gson:0.4.5'
+
+    compile 'com.ryanharter.auto.value:auto-value-parcel:0.2.5'
+
+}
+
+apply plugin: 'com.google.gms.google-services'
+
+

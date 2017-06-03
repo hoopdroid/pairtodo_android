@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pairtodobeta">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <application
+        android:name="com.pairtodobeta.PairTodoApplication"
+        android:fullBackupContent="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <service
+            android:name="io.hypertrack.smart_scheduler.SmartSchedulerAlarmReceiverService"
+            android:exported="false" />
+        <service
+            android:name="io.hypertrack.smart_scheduler.SmartSchedulerPeriodicTaskService"
+            android:exported="true"
+            android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE">
+            <intent-filter>
+                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="io.hypertrack.smart_scheduler.SmartSchedulerAlarmReceiver"
+            android:exported="false" />
+
+        <activity
+            android:name="com.pairtodobeta.ui.intro.StartActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pairtodobeta.ui.intro.sign_up.SignUpActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pairtodobeta.ui.intro.sign_in.SignInActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pairtodobeta.ui.intro.invite_couple.InviteCoupleActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pairtodobeta.ui.main.profile.noCouple.SearchCoupleActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pairtodobeta.ui.intro.first_task.FirstTaskActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pairtodobeta.ui.main.tasks.new_task.AddTaskActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pairtodobeta.ui.intro.SplashScreenActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.pairtodobeta.ui.main.chat.ChatActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.pairtodobeta.ui.main.tasks.JobChatActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.pairtodobeta.ui.main.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pairtodobeta.ui.VKPermissionsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pairtodobeta.ui.main.shop.ShopItemActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pairtodobeta.ui.main.shop.ShopCategoryActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pairtodobeta.ui.main.tasks.task.TaskActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pairtodobeta.ui.main.tasks.task.TaskEditActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.pairtodobeta.ui.main.profile.stats.StatsActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.pairtodobeta.ui.main.profile.gifts.GiftsActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.pairtodobeta.ui.main.shop.SendGiftActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.pairtodobeta.ui.main.profile.settings.SettingsActivity"
+            android:label="Настройки" />
+        <activity
+            android:name="com.pairtodobeta.ui.PhotoViewActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.pairtodobeta.ui.intro.sign_in.FacebookActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+
+        </activity>
+    </application>
+
+</manifest>

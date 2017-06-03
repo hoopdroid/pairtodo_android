@@ -1,0 +1,117 @@
+{
+  "themas": [
+    {
+      "nom": 0,
+      "name_ru": "ПараДел",
+      "name_en": "Pair to do",
+      "tovarName": "thema0",
+      "price": "free",
+      "color1": "#404b5a",
+      "color2": "#526681",
+      "preview": "file:///android_asset/themes/preview/thema0_prew.png",
+      "full": "file:///android_asset/themes/full/thema0_bg-568h@2x.png"
+    },
+    {
+      "nom": 1,
+      "name_ru": "Сиреневый туман",
+      "name_en": "Purple haze",
+      "tovarName": "thema1",
+      "price": "free",
+      "color1": "#353a6b",
+      "color2": "#555b97",
+      "preview": "file:///android_asset/themes/preview/thema1_prew.png",
+      "full": "file:///android_asset/themes/full/thema1_bg-568h@2x.png"
+    },
+    {
+      "nom": 2,
+      "name_ru": "О, Париж!",
+      "name_en": "Oh, Paris!",
+      "tovarName": "thema2",
+      "price": "com.pairtodo.team",
+      "color1": "#21404a",
+      "color2": "#3f6876",
+      "preview": "file:///android_asset/themes/preview/thema2_prew.png",
+      "full": "file:///android_asset/themes/full/thema2_bg-568h@2x.png"
+    },
+    {
+      "nom": 3,
+      "name_ru": "Скромная красота",
+      "name_en": "Modest beauty",
+      "tovarName": "thema3",
+      "price": "com.pairtodo.team",
+      "color1": "#99594e",
+      "color2": "#ce7566",
+      "preview": "file:///android_asset/themes/preview/thema3_prew.png",
+      "full": "file:///android_asset/themes/full/thema3_bg-568h@2x.png"
+    },
+    {
+      "nom": 4,
+      "name_ru": "Добрая ведьма",
+      "name_en": "The good witch",
+      "tovarName": "thema4",
+      "price": "com.pairtodo.team",
+      "color1": "#503b5f",
+      "color2": "#6c4e82",
+      "preview": "file:///android_asset/themes/preview/thema4_prew.png",
+      "full": "file:///android_asset/themes/full/thema4_bg-568h@2x.png"
+    },
+    {
+      "nom": 5,
+      "name_ru": "Повелитель дорог",
+      "name_en": "King of the road",
+      "tovarName": "thema5",
+      "price": "com.pairtodo.team",
+      "color1": "#30373d",
+      "color2": "#64727f",
+      "preview": "file:///android_asset/themes/preview/thema5_prew.png",
+      "full": "file:///android_asset/themes/full/thema5_bg-568h@2x.png"
+    },
+    {
+      "nom": 6,
+      "name_ru": "Нежный пурпур",
+      "name_en": "Delicate purple",
+      "tovarName": "thema6",
+      "price": "com.pairtodo.team",
+      "color1": "#653a44",
+      "color2": "#9b5b6a",
+      "preview": "file:///android_asset/themes/preview/thema6_prew.png",
+      "full": "file:///android_asset/themes/full/thema6_bg-568h@2x.png"
+    },
+    {
+      "nom": 7,
+      "name_ru": "Яркое лето",
+      "name_en": "Bright summer",
+      "tovarName": "thema7",
+      "price": "com.pairtodo.team",
+      "color1": "#226750",
+      "color2": "#3a9275",
+      "preview": "file:///android_asset/themes/preview/thema7_prew.png",
+      "full": "file:///android_asset/themes/full/thema7_bg-568h@2x.png"
+    },
+    {
+      "nom": 8,
+      "name_ru": "Мур-мур",
+      "name_en": "Meow-meow",
+      "tovarName": "thema8",
+      "price": "com.pairtodo.team",
+      "color1": "#2a3141",
+      "color2": "#46657c",
+      "preview": "file:///android_asset/themes/preview/thema8_prew.png",
+      "full": "file:///android_asset/themes/full/thema8_bg-568h@2x.png"
+
+    },
+    {
+      "nom": 9,
+      "name_ru": "На дне моря",
+      "name_en": "At the bottom of the sea",
+      "tovarName": "thema9",
+      "price": "com.pairtodo.team",
+      "color1": "#335f8b",
+      "color2": "#488acd",
+      "preview": "file:///android_asset/themes/preview/thema9_prew.png",
+      "full": "file:///android_asset/themes/full/thema9_bg-568h@2x.png"
+    }
+  ]
+}
+
+

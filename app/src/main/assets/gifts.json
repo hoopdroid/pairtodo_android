@@ -1,0 +1,411 @@
+{
+  "gifts": [
+    {
+      "nom": 0,
+      "name_ru": "Лепестки роз",
+      "name_en": "Rose petals",
+      "tovarName": "gift0",
+      "price": "free",
+      "preview": "file:///android_asset/gifts/preview/gift0_prew.png",
+      "full": "file:///android_asset/gifts/full/gift0-667h@2x.jpg"
+    },
+    {
+      "nom": 1,
+      "name_ru": "Восхитительная ночь",
+      "name_en": "Wonderful night",
+      "tovarName": "gift1",
+      "price": "com.pairtodo.card1",
+      "preview": "file:///android_asset/gifts/preview/gift1_prew.png",
+      "full": "file:///android_asset/gifts/full/gift1-667h@2x.jpg"
+    },
+    {
+      "nom": 2,
+      "name_ru": "До луны и обратно",
+      "name_en": "The month of love",
+      "tovarName": "gift2",
+      "price": "com.pairtodo.card1",
+      "preview": "file:///android_asset/gifts/preview/gift2_prew.png",
+      "full": "file:///android_asset/gifts/full/gift2-667h@2x.jpg"
+    },
+    {
+      "nom": 3,
+      "name_ru": "Месяц любви",
+      "name_en": "Месяц любви",
+      "tovarName": "gift3",
+      "price": "com.pairtodo.card1",
+      "preview": "file:///android_asset/gifts/preview/gift3_prew.png",
+      "full": "file:///android_asset/gifts/full/gift3-667h@2x.jpg"
+    },
+    {
+      "nom": 4,
+      "name_ru": "Веселое признание",
+      "name_en": "Funny declaration of love",
+      "tovarName": "gift4",
+      "price": "com.pairtodo.card1",
+      "preview": "file:///android_asset/gifts/preview/gift4_prew.png",
+      "full": "file:///android_asset/gifts/full/gift4-667h@2x.jpg"
+    },
+    {
+      "nom": 5,
+      "name_ru": "Забавное признание",
+      "name_en": "Funny love",
+      "tovarName": "gift5",
+      "price": "com.pairtodo.card1",
+      "preview": "file:///android_asset/gifts/preview/gift5_prew.png",
+      "full": "file:///android_asset/gifts/full/gift5-667h@2x.jpg"
+    },
+    {
+      "nom": 6,
+      "name_ru": "Мое сердце в твоих руках",
+      "name_en": "My heart is in your hands",
+      "tovarName": "gift6",
+      "price": "com.pairtodo.card1",
+      "preview": "file:///android_asset/gifts/preview/gift6_prew.png",
+      "full": "file:///android_asset/gifts/full/gift6-667h@2x.jpg"
+    },
+    {
+      "nom": 7,
+      "name_ru": "Вишенка на торте",
+      "name_en": "The icing on the cake",
+      "tovarName": "gift7",
+      "price": "com.pairtodo.card1",
+      "preview": "file:///android_asset/gifts/preview/gift7_prew.png",
+      "full": "file:///android_asset/gifts/full/gift7-667h@2x.jpg"
+    },
+    {
+      "nom": 8,
+      "name_ru": "Нежный день рожденья",
+      "name_en": "Delicate birthday",
+      "tovarName": "gift8",
+      "price": "com.pairtodo.card1",
+      "preview": "file:///android_asset/gifts/preview/gift8_prew.png",
+      "full": "file:///android_asset/gifts/full/gift8-667h@2x.jpg"
+    },
+    {
+      "nom": 9,
+      "name_ru": "Моему супермену",
+      "name_en": "For my Superman",
+      "tovarName": "gift9",
+      "price": "com.pairtodo.card1",
+      "preview": "file:///android_asset/gifts/preview/gift9_prew.png",
+      "full": "file:///android_asset/gifts/full/gift9-667h@2x.jpg"
+    },
+    {
+      "nom": 10,
+      "name_ru": "Сердечное конфетти",
+      "name_en": "Heart confetti",
+      "tovarName": "gift10",
+      "price": "com.pairtodo.card1",
+      "preview": "file:///android_asset/gifts/preview/gift10_prew.png",
+      "full": "file:///android_asset/gifts/full/gift10-667h@2x.jpg"
+    },
+    {
+      "nom": 11,
+      "name_ru": "Давай веселиться!",
+      "name_en": "Let's have some fun!",
+      "tovarName": "gift11",
+      "price": "com.pairtodo.card1",
+      "preview": "file:///android_asset/gifts/preview/gift11_prew.png",
+      "full": "file:///android_asset/gifts/full/gift11-667h@2x.jpg"
+    },
+    {
+      "nom": 12,
+      "name_ru": "Я рядом",
+      "name_en": "I'm around",
+      "tovarName": "gift12",
+      "price": "com.pairtodo.card1",
+      "preview": "file:///android_asset/gifts/preview/gift12_prew.png",
+      "full": "file:///android_asset/gifts/full/gift12-667h@2x.jpg"
+    },
+    {
+      "nom": 13,
+      "name_ru": "Роза для любимой",
+      "name_en": "Rose for my beloved",
+      "tovarName": "gift13",
+      "price": "com.pairtodo.card1",
+      "preview": "file:///android_asset/gifts/preview/gift13_prew.png",
+      "full": "file:///android_asset/gifts/full/gift13-667h@2x.jpg"
+    },
+    {
+      "nom": 14,
+      "name_ru": "С тобой тепло",
+      "name_en": "I'am with you warm",
+      "tovarName": "gift14",
+      "price": "com.pairtodo.card1",
+      "preview": "file:///android_asset/gifts/preview/gift14_prew.png",
+      "full": "file:///android_asset/gifts/full/gift14-667h@2x.jpg"
+    },
+    {
+      "nom": 15,
+      "name_ru": "Яркий свет любви",
+      "name_en": "Bright light of love",
+      "tovarName": "gift15",
+      "price": "com.pairtodo.card1",
+      "preview": "file:///android_asset/gifts/preview/gift15_prew.png",
+      "full": "file:///android_asset/gifts/full/gift15-667h@2x.jpg"
+    },
+    {
+      "nom": 16,
+      "name_ru": "Не будь колючкой!",
+      "name_en": "Don't be prick!",
+      "tovarName": "gift16",
+      "price": "com.pairtodo.card1",
+      "preview": "file:///android_asset/gifts/preview/gift16_prew.png",
+      "full": "file:///android_asset/gifts/full/gift16-667h@2x.jpg"
+    },
+    {
+      "nom": 17,
+      "name_ru": "Моей цыпе",
+      "name_en": "For my chick",
+      "tovarName": "gift17",
+      "price": "com.pairtodo.card1",
+      "preview": "file:///android_asset/gifts/preview/gift17_prew.png",
+      "full": "file:///android_asset/gifts/full/gift17-667h@2x.jpg"
+    },
+    {
+      "nom": 18,
+      "name_ru": "Прости меня",
+      "name_en": "Forgive me",
+      "tovarName": "gift18",
+      "price": "com.pairtodo.card1",
+      "preview": "file:///android_asset/gifts/preview/gift18_prew.png",
+      "full": "file:///android_asset/gifts/full/gift18-667h@2x.jpg"
+    },
+    {
+      "nom": 19,
+      "name_ru": "Летать высоко",
+      "name_en": "Fly high",
+      "tovarName": "gift19",
+      "price": "com.pairtodo.card1",
+      "preview": "file:///android_asset/gifts/preview/gift19_prew.png",
+      "full": "file:///android_asset/gifts/full/gift19-667h@2x.jpg"
+    },
+    {
+      "nom": 20,
+      "name_ru": "В облаках",
+      "name_en": "In the sky",
+      "tovarName": "gift20",
+      "price": "com.pairtodo.card1",
+      "preview": "file:///android_asset/gifts/preview/gift20_prew.png",
+      "full": "file:///android_asset/gifts/full/gift20-667h@2x.jpg"
+    },
+    {
+      "nom": 21,
+      "name_ru": "Ты в моем сердце",
+      "name_en": "You're in my heart",
+      "tovarName": "gift21",
+      "price": "com.pairtodo.card1",
+      "preview": "file:///android_asset/gifts/preview/gift21_prew.png",
+      "full": "file:///android_asset/gifts/full/gift21-667h@2x.jpg"
+    },
+    {
+      "nom": 22,
+      "name_ru": "Разноцветная романтика",
+      "name_en": "Colorful romance",
+      "tovarName": "gift22",
+      "price": "com.pairtodo.card1",
+      "preview": "file:///android_asset/gifts/preview/gift22_prew.png",
+      "full": "file:///android_asset/gifts/full/gift22-667h@2x.jpg"
+    },
+    {
+      "nom": 23,
+      "name_ru": "Выпьем кофе?",
+      "name_en": "Let's drink coffee?",
+      "tovarName": "gift23",
+      "price": "com.pairtodo.card1",
+      "preview": "file:///android_asset/gifts/preview/gift23_prew.png",
+      "full": "file:///android_asset/gifts/full/gift23-667h@2x.jpg"
+    },
+    {
+      "nom": 24,
+      "name_ru": "Плюшевый мишка",
+      "name_en": "Teddy bear",
+      "tovarName": "gift24",
+      "price": "com.pairtodo.card1",
+      "preview": "file:///android_asset/gifts/preview/gift24_prew.png",
+      "full": "file:///android_asset/gifts/full/gift24-667h@2x.jpg"
+    },
+    {
+      "nom": 25,
+      "name_ru": "Лучшее предложение",
+      "name_en": "Best offer",
+      "tovarName": "gift25",
+      "price": "com.pairtodo.card1",
+      "preview": "file:///android_asset/gifts/preview/gift25_prew.png",
+      "full": "file:///android_asset/gifts/full/gift25-667h@2x.jpg"
+    },
+    {
+      "nom": 26,
+      "name_ru": "Красивое чувство",
+      "name_en": "Beautiful feeling",
+      "tovarName": "gift26",
+      "price": "com.pairtodo.card1",
+      "preview": "file:///android_asset/gifts/preview/gift26_prew.png",
+      "full": "file:///android_asset/gifts/full/gift26-667h@2x.jpg"
+    },
+    {
+      "nom": 27,
+      "name_ru": "Дорогой, я тебя жду",
+      "name_en": "Dear! I've been wainting for :)",
+      "tovarName": "gift27",
+      "price": "com.pairtodo.card1",
+      "preview": "file:///android_asset/gifts/preview/gift27_prew.png",
+      "full": "file:///android_asset/gifts/full/gift27-667h@2x.jpg"
+    },
+    {
+      "nom": 28,
+      "name_ru": "Самого счастливого дня рожденья!",
+      "name_en": "Happy birthday!",
+      "tovarName": "gift28",
+      "price": "com.pairtodo.card1",
+      "preview": "file:///android_asset/gifts/preview/gift28_prew.png",
+      "full": "file:///android_asset/gifts/full/gift28-667h@2x.jpg"
+    },
+    {
+      "nom": 29,
+      "name_ru": "Поцелуи для любимого",
+      "name_en": "Kisses for my sweatheart",
+      "tovarName": "gift29",
+      "price": "com.pairtodo.card1",
+      "preview": "file:///android_asset/gifts/preview/gift29_prew.png",
+      "full": "file:///android_asset/gifts/full/gift29-667h@2x.jpg"
+    },
+    {
+      "nom": 30,
+      "name_ru": "Любовный спорт",
+      "name_en": "Love sports",
+      "tovarName": "gift30",
+      "price": "com.pairtodo.card1",
+      "preview": "file:///android_asset/gifts/preview/gift30_prew.png",
+      "full": "file:///android_asset/gifts/full/gift30-667h@2x.jpg"
+    },
+    {
+      "nom": 31,
+      "name_ru": "С днем святого Валентина",
+      "name_en": "Happy Valentine's day",
+      "tovarName": "gift31",
+      "price": "com.pairtodo.card1",
+      "preview": "file:///android_asset/gifts/preview/gift31_prew.png",
+      "full": "file:///android_asset/gifts/full/gift31-667h@2x.jpg"
+    },
+    {
+      "nom": 32,
+      "name_ru": "Любовный коктейльа",
+      "name_en": "Love cocktail",
+      "tovarName": "gift32",
+      "price": "com.pairtodo.card1",
+      "preview": "file:///android_asset/gifts/preview/gift32_prew.png",
+      "full": "file:///android_asset/gifts/full/gift32-667h@2x.jpg"
+    },
+    {
+      "nom": 33,
+      "name_ru": "Мур-мур",
+      "name_en": "Meow-meow",
+      "tovarName": "gift33",
+      "price": "com.pairtodo.card1",
+      "preview": "file:///android_asset/gifts/preview/gift33_prew.png",
+      "full": "file:///android_asset/gifts/full/gift33-667h@2x.jpg"
+    },
+    {
+      "nom": 34,
+      "name_ru": "Прости меня..",
+      "name_en": "Forgive me..",
+      "tovarName": "gift34",
+      "price": "com.pairtodo.card1",
+      "preview": "file:///android_asset/gifts/preview/gift34_prew.png",
+      "full": "file:///android_asset/gifts/full/gift34-667h@2x.jpg"
+    },
+    {
+      "nom": 35,
+      "name_ru": "Верный пёсик",
+      "name_en": "Faithful doggie",
+      "tovarName": "gift35",
+      "price": "com.pairtodo.card1",
+      "preview": "file:///android_asset/gifts/preview/gift35_prew.png",
+      "full": "file:///android_asset/gifts/full/gift35-667h@2x.jpg"
+    },
+    {
+      "nom": 36,
+      "name_ru": "Приятный сюрприз",
+      "name_en": "Pleasant surprise",
+      "tovarName": "gift36",
+      "price": "com.pairtodo.card1",
+      "preview": "file:///android_asset/gifts/preview/gift36_prew.png",
+      "full": "file:///android_asset/gifts/full/gift36-667h@2x.jpg"
+    },
+    {
+      "nom": 37,
+      "name_ru": "Вместе навсегда!",
+      "name_en": "Together forever!",
+      "tovarName": "gift37",
+      "price": "com.pairtodo.card1",
+      "preview": "file:///android_asset/gifts/preview/gift37_prew.png",
+      "full": "file:///android_asset/gifts/full/gift37-667h@2x.jpg"
+    },
+    {
+      "nom": 38,
+      "name_ru": "Тебе подарочек!",
+      "name_en": "Present for you!",
+      "tovarName": "gift38",
+      "price": "com.pairtodo.card1",
+      "preview": "file:///android_asset/gifts/preview/gift38_prew.png",
+      "full": "file:///android_asset/gifts/full/gift38-667h@2x.jpg"
+    },
+    {
+      "nom": 39,
+      "name_ru": "Милашка",
+      "name_en": "Cutie",
+      "tovarName": "gift39",
+      "price": "com.pairtodo.card1",
+      "preview": "file:///android_asset/gifts/preview/gift39_prew.png",
+      "full": "file:///android_asset/gifts/full/gift39-667h@2x.jpg"
+    },
+    {
+      "nom": 40,
+      "name_ru": "С днем рожжжжденья!",
+      "name_en": "Happy birzzzzzzzday!",
+      "tovarName": "gift40",
+      "price": "com.pairtodo.card1",
+      "preview": "file:///android_asset/gifts/preview/gift40_prew.png",
+      "full": "file:///android_asset/gifts/full/gift40-667h@2x.jpg"
+    },
+    {
+      "nom": 41,
+      "name_ru": "Обнимаю тебя",
+      "name_en": "Hug you",
+      "tovarName": "gift41",
+      "price": "com.pairtodo.card1",
+      "preview": "file:///android_asset/gifts/preview/gift41_prew.png",
+      "full": "file:///android_asset/gifts/full/gift41-667h@2x.jpg"
+    },
+    {
+      "nom": 42,
+      "name_ru": "Пойдем на свидание?",
+      "name_en": "Let's go on date?",
+      "tovarName": "gift42",
+      "price": "com.pairtodo.card1",
+      "preview": "file:///android_asset/gifts/preview/gift42_prew.png",
+      "full": "file:///android_asset/gifts/full/gift42-667h@2x.jpg"
+    },
+    {
+      "nom": 43,
+      "name_ru": "Я хороший!",
+      "name_en": "I'am good!",
+      "tovarName": "gift43",
+      "price": "com.pairtodo.card1",
+      "preview": "file:///android_asset/gifts/preview/gift43_prew.png",
+      "full": "file:///android_asset/gifts/full/gift43-667h@2x.jpg"
+    },
+    {
+      "nom": 44,
+      "name_ru": "Хорошего дня",
+      "name_en": "Have a good day!",
+      "tovarName": "gift44",
+      "price": "com.pairtodo.card1",
+      "preview": "file:///android_asset/gifts/preview/gift44_prew.png",
+      "full": "file:///android_asset/gifts/full/gift44-667h@2x.jpg"
+    }
+  ]
+}
+
+

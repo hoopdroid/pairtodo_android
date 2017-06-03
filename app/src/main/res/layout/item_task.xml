@@ -1,0 +1,77 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/post_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    card_view:cardCornerRadius="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:minHeight="80dp"
+        android:layout_height="wrap_content"
+        android:background="@color/vk_white"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="8dp"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                tools:text="Задача Купить в Ашане " />
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_marginEnd="8dp"
+                android:id="@+id/list_item_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical|end"
+                android:src="@drawable/ic_format_list_bulleted_black_24dp" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_task_descr"
+            android:layout_margin="8dp"
+            tools:text="texttextextextextextextextextextextextextextextextextextextextextextextextextextextextextextextextex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <com.github.curioustechizen.ago.RelativeTimeTextView
+                android:id="@+id/tv_due_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|start"
+                android:padding="8dp"
+                android:textSize="14sp"
+                tools:text="Сегодня" />
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_marginEnd="8dp"
+                android:id="@+id/favorite_item_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="end|center_vertical"
+                android:src="@drawable/ic_star_24dp" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

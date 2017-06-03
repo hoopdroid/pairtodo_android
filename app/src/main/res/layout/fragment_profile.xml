@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/userContent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/profile_layout_height"
+            android:background="@color/white"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/settings"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="right|top"
+                android:layout_margin="16dp"
+                android:elevation="10dp"
+                android:src="@drawable/settings_box" />
+
+            <include layout="@layout/diagonal_layout"></include>
+
+            <LinearLayout
+                android:elevation="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/userProfilePhoto"
+                    android:layout_width="@dimen/image_profile_cycle"
+                    android:layout_height="@dimen/image_profile_cycle"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="40dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:src="?attr/colorPrimary"
+                    app:civ_border_color="?attr/colorPrimary"
+                    app:civ_border_width="3dp"
+                    app:civ_shadow="false" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="100dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <me.grantland.widget.AutofitTextView
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:id="@id/userProfileName"
+                        android:layout_width="@dimen/profile_content_margin_top"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text=""
+                        android:textAlignment="textEnd"
+                        android:textColor="?attr/colorPrimaryDark"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="bottom"
+                android:background="@color/vk_share_gray_line"></View>
+
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/noCoupleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/profile_items_margin"
+                    android:text="@string/no_couple"
+                    android:textAlignment="center"
+                    android:textColor="?attr/colorAccent"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/searchCoupleBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="1"
+                    android:background="@drawable/material_btn"
+                    android:text="@string/search_couple"
+                    android:textColor="@color/white" />
+
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:animateLayoutChanges="true"
+            android:background="@color/white"
+            android:elevation="5dp"
+            android:visibility="visible">
+
+            <ScrollView
+                android:id="@+id/user_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp">
+
+                        <RelativeLayout
+                            android:id="@+id/content_main"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ProgressBar
+                                android:id="@+id/chatLoading"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:layout_centerInParent="true" />
+
+                            <com.stfalcon.chatkit.dialogs.DialogsList
+                                android:id="@+id/dialogsList"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:dialogDividerLeftPadding="0dp"
+                                app:dialogMessageAvatarEnabled="false"
+                                app:dialogMessageTextSize="16sp"
+                                app:dialogTitleTextColor="?attr/colorPrimaryDark"
+                                app:dialogTitleTextStyle="bold"
+                                app:dialogUnreadBubbleBackgroundColor="@color/red"
+                                app:dialogUnreadItemBackground="@color/gray_transparent"
+                                app:dialogUnreadTitleTextStyle="normal" />
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:id="@+id/stats"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:animateLayoutChanges="false"
+                        android:background="?attr/selectableItemBackground"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/profile_items_margin"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="@dimen/profile_items_margin">
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/chart_areaspline" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginStart="32dp"
+                                android:text="@string/my_stats"
+                                android:textColor="?attr/colorPrimaryDark"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/gifts"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:animateLayoutChanges="false"
+                        android:background="?attr/selectableItemBackground"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_gravity="bottom"
+                            android:background="@color/vk_share_gray_line"></View>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/profile_items_margin"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="@dimen/profile_items_margin">
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/gift" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginStart="32dp"
+                                android:text="@string/my_gifts"
+                                android:textColor="?attr/colorPrimaryDark"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+
+</android.support.v4.widget.SwipeRefreshLayout>

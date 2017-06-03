@@ -1,0 +1,17 @@
+<tabs>
+    <tab
+        icon="@drawable/ic_person24dp"
+        id="@+id/tab_favorites"
+        title="@string/bottombar_profile" />
+    <tab
+        icon="@drawable/format_list_bulleted_type"
+        id="@+id/tab_tasks"
+        title="@string/bottombar_tasks" />
+    <tab
+        icon="@drawable/shopping"
+        id="@+id/tab_shop"
+        title="@string/bottombar_shop" />
+</tabs>
+
+    <!--badgeBackgroundColor="@color/colorPrimary"-->
+    <!--barColorWhenSelected="@color/colorPrimary"-->

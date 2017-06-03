@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="image_gift_grid_size">180dp</dimen>
+    <dimen name="image_profile_cycle">170dp</dimen>
+    <dimen name="profile_layout_height">220dp</dimen>
+    <dimen name="profile_content_margin_top">220dp</dimen>
+
+</resources>

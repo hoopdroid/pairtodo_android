@@ -1,0 +1,46 @@
+<android.support.v7.widget.CardView
+    android:layout_weight="1"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/gifts_container"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_margin="4dp"
+    card_view:cardCornerRadius="3dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_gifts_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:background="@color/colorPrimary"
+            android:fitsSystemWindows="true"
+            android:scaleType="centerCrop" />
+
+        <View
+            android:alpha="0.4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shop_gradient" />
+
+            <TextView
+                android:alpha="1"
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/gifts"
+                android:textColor="@color/white"
+                android:textAllCaps="true"
+                android:textSize="24sp"
+                android:textStyle="normal|bold"
+                android:typeface="normal" />
+
+    </FrameLayout>
+
+
+</android.support.v7.widget.CardView>

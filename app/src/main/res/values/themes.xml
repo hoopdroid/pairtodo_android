@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default  -->
+    <style name="Theme.Pairtodo.Default" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="tabTextAppearance">@style/TextAppearance.FontPath</item>
+        <item name="android:textViewStyle">@style/AppTheme.Widget.TextView</item>
+        <item name="colorPrimary">#4F5967</item>
+        <item name="colorPrimaryDark">#37474F</item>
+        <item name="colorAccent">#E91E63</item>
+        <item name="android:windowBackground">@drawable/default_theme_background</item>
+    </style>
+
+    <!-- PurpleHaze -->
+    <style name="Theme.Pairtodo.PurpleHaze" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="tabTextAppearance">@style/TextAppearance.FontPath</item>
+        <item name="android:textViewStyle">@style/AppTheme.Widget.TextView</item>
+        <item name="colorPrimary">#555b97</item>
+        <item name="colorPrimaryDark">#353a6b</item>
+        <item name="colorAccent">#283593</item>
+        <item name="android:windowBackground">@drawable/theme_purple_haze_background</item>
+    </style>
+
+
+    <!-- Paris -->
+    <style name="Theme.Pairtodo.Paris" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="tabTextAppearance">@style/TextAppearance.FontPath</item>
+        <item name="android:textViewStyle">@style/AppTheme.Widget.TextView</item>
+        <item name="colorPrimary">#3f6876</item>
+        <item name="colorPrimaryDark">#21404a</item>
+        <item name="colorAccent">#607D8B</item>
+        <item name="android:windowBackground">@drawable/theme_paris_background</item>
+    </style>
+
+
+    <!-- Shy Beauty -->
+    <style name="Theme.Pairtodo.Beauty" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="tabTextAppearance">@style/TextAppearance.FontPath</item>
+        <item name="android:textViewStyle">@style/AppTheme.Widget.TextView</item>
+        <item name="colorPrimary">#99594e</item>
+        <item name="colorPrimaryDark">#ce7566</item>
+        <item name="colorAccent">#F44336</item>
+        <item name="android:windowBackground">@drawable/theme_beauty_background</item>
+    </style>
+
+    <!-- Witch -->
+    <style name="Theme.Pairtodo.Witch" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="tabTextAppearance">@style/TextAppearance.FontPath</item>
+        <item name="android:textViewStyle">@style/AppTheme.Widget.TextView</item>
+        <item name="colorPrimary">#503b5f</item>
+        <item name="colorPrimaryDark">#6c4e82</item>
+        <item name="colorAccent">#4527A0</item>
+        <item name="android:windowBackground">@drawable/theme_witch_background</item>
+    </style>
+
+    <!-- Road king -->
+    <style name="Theme.Pairtodo.Road" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="tabTextAppearance">@style/TextAppearance.FontPath</item>
+        <item name="android:textViewStyle">@style/AppTheme.Widget.TextView</item>
+        <item name="colorPrimary">#64727f</item>
+        <item name="colorPrimaryDark">#30373d</item>
+        <item name="colorAccent">#FFC107</item>
+        <item name="android:windowBackground">@drawable/theme_road_backgrround</item>
+    </style>
+
+    <!-- Cute purple -->
+    <style name="Theme.Pairtodo.CutePurple" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="tabTextAppearance">@style/TextAppearance.FontPath</item>
+        <item name="android:textViewStyle">@style/AppTheme.Widget.TextView</item>
+        <item name="colorPrimary">#9b5b6a</item>
+        <item name="colorPrimaryDark">#653a44</item>
+        <item name="colorAccent">#FFC107</item>
+        <item name="android:windowBackground">@drawable/theme_cute_purple_background</item>
+    </style>
+
+    <!-- Summer -->
+    <style name="Theme.Pairtodo.Summer" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="tabTextAppearance">@style/TextAppearance.FontPath</item>
+        <item name="android:textViewStyle">@style/AppTheme.Widget.TextView</item>
+        <item name="colorPrimary">#226750</item>
+        <item name="colorPrimaryDark">#3a9275</item>
+        <item name="colorAccent">#FFC107</item>
+        <item name="android:windowBackground">@drawable/theme_summer_background</item>
+    </style>
+
+    <!-- Cat -->
+    <style name="Theme.Pairtodo.Cat" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="tabTextAppearance">@style/TextAppearance.FontPath</item>
+        <item name="android:textViewStyle">@style/AppTheme.Widget.TextView</item>
+        <item name="colorPrimary">#46657c</item>
+        <item name="colorPrimaryDark">#2a3141</item>
+        <item name="colorAccent">#37474F</item>
+        <item name="android:windowBackground">@drawable/theme_cat_background</item>
+    </style>
+
+    <!-- Sea -->
+    <style name="Theme.Pairtodo.Sea" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="tabTextAppearance">@style/TextAppearance.FontPath</item>
+        <item name="android:textViewStyle">@style/AppTheme.Widget.TextView</item>
+        <item name="colorPrimary">#488acd</item>
+        <item name="colorPrimaryDark">#335f8b</item>
+        <item name="colorAccent">#00E5FF</item>
+        <item name="android:windowBackground">@drawable/theme_sea_background</item>
+    </style>
+
+
+
+
+
+
+
+
+
+
+</resources>

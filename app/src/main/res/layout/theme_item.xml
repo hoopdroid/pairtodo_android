@@ -1,0 +1,67 @@
+<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_margin="4dp"
+    card_view:cardCornerRadius="3dp">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:fitsSystemWindows="true"
+            android:background="@color/colorPrimary"
+            android:id="@+id/shape_image"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true" />
+        <View
+            android:alpha="0.3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/theme_gradient" />
+
+        <RelativeLayout
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:textColor="@color/white"
+                android:layout_marginRight="16dp"
+                android:padding="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/shape_image_name"
+                android:text="Название"
+                android:layout_alignParentBottom="true"
+                android:typeface="normal"
+                android:textSize="28sp"
+                android:textAllCaps="true"
+                />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_gravity="end|right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:id="@+id/theme_price"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="Бесплатно"
+            android:textColor="@color/white"
+            android:typeface="normal"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:textStyle="normal|bold" />
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

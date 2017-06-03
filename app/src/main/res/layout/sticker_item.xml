@@ -1,0 +1,8 @@
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sticker_image"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:layout_margin="16dp"
+    >
+</ImageView>
