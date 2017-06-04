@@ -11,7 +11,7 @@
     android:paddingRight="4dp"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.pairtodobeta.ui.main.profile.stats.StatsActivity"
+    tools:context="com.pairtodopremium.ui.main.profile.stats.StatsActivity"
     tools:showIn="@layout/activity_settings">
 
     <LinearLayout
@@ -159,6 +159,7 @@
         </RelativeLayout>
 
         <RelativeLayout
+            android:visibility="gone"
             android:background="?attr/selectableItemBackground"
             android:id="@+id/userPasswordEdit"
             android:layout_width="match_parent"

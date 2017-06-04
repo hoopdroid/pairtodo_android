@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.pairtodobeta">
+    package="com.pairtodopremium">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
@@ -9,7 +9,7 @@
     <uses-permission android:name="com.android.vending.BILLING" />
 
     <application
-        android:name="com.pairtodobeta.PairTodoApplication"
+        android:name="com.pairtodopremium.PairTodoApplication"
         android:fullBackupContent="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -36,35 +36,35 @@
             android:exported="false" />
 
         <activity
-            android:name="com.pairtodobeta.ui.intro.StartActivity"
+            android:name="com.pairtodopremium.ui.intro.StartActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.pairtodobeta.ui.intro.sign_up.SignUpActivity"
+            android:name="com.pairtodopremium.ui.intro.sign_up.SignUpActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.pairtodobeta.ui.intro.sign_in.SignInActivity"
+            android:name="com.pairtodopremium.ui.intro.sign_in.SignInActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.pairtodobeta.ui.intro.invite_couple.InviteCoupleActivity"
+            android:name="com.pairtodopremium.ui.intro.invite_couple.InviteCoupleActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.pairtodobeta.ui.main.profile.noCouple.SearchCoupleActivity"
+            android:name="com.pairtodopremium.ui.main.profile.noCouple.SearchCoupleActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.pairtodobeta.ui.intro.first_task.FirstTaskActivity"
+            android:name="com.pairtodopremium.ui.intro.first_task.FirstTaskActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.pairtodobeta.ui.main.tasks.new_task.AddTaskActivity"
+            android:name="com.pairtodopremium.ui.main.tasks.new_task.AddTaskActivity"
             android:label=""
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.pairtodobeta.ui.intro.SplashScreenActivity"
+            android:name="com.pairtodopremium.ui.intro.SplashScreenActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -74,58 +74,58 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.pairtodobeta.ui.main.chat.ChatActivity"
+            android:name="com.pairtodopremium.ui.main.chat.ChatActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name="com.pairtodobeta.ui.main.tasks.JobChatActivity"
+            android:name="com.pairtodopremium.ui.main.tasks.JobChatActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name="com.pairtodobeta.ui.main.MainActivity"
+            android:name="com.pairtodopremium.ui.main.MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.pairtodobeta.ui.VKPermissionsActivity"
+            android:name="com.pairtodopremium.ui.VKPermissionsActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.pairtodobeta.ui.main.shop.ShopItemActivity"
+            android:name="com.pairtodopremium.ui.main.shop.ShopItemActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.pairtodobeta.ui.main.shop.ShopCategoryActivity"
+            android:name="com.pairtodopremium.ui.main.shop.ShopCategoryActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.pairtodobeta.ui.main.tasks.task.TaskActivity"
+            android:name="com.pairtodopremium.ui.main.tasks.task.TaskActivity"
             android:label=""
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.pairtodobeta.ui.main.tasks.task.TaskEditActivity"
+            android:name="com.pairtodopremium.ui.main.tasks.task.TaskEditActivity"
             android:label=""
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.pairtodobeta.ui.main.profile.stats.StatsActivity"
+            android:name="com.pairtodopremium.ui.main.profile.stats.StatsActivity"
             android:label="@string/app_name" />
         <activity
-            android:name="com.pairtodobeta.ui.main.profile.gifts.GiftsActivity"
+            android:name="com.pairtodopremium.ui.main.profile.gifts.GiftsActivity"
             android:label="@string/app_name" />
         <activity
-            android:name="com.pairtodobeta.ui.main.shop.SendGiftActivity"
+            android:name="com.pairtodopremium.ui.main.shop.SendGiftActivity"
             android:label="@string/app_name" />
         <activity
-            android:name="com.pairtodobeta.ui.main.profile.settings.SettingsActivity"
+            android:name="com.pairtodopremium.ui.main.profile.settings.SettingsActivity"
             android:label="Настройки" />
         <activity
-            android:name="com.pairtodobeta.ui.PhotoViewActivity"
+            android:name="com.pairtodopremium.ui.PhotoViewActivity"
             android:label=""
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
-            android:name="com.pairtodobeta.ui.intro.sign_in.FacebookActivity"
+            android:name="com.pairtodopremium.ui.intro.sign_in.FacebookActivity"
             android:label=""
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme">

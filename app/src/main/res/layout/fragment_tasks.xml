@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:theme="@style/AppTheme.AppBarOverlay">
 
-            <com.pairtodobeta.ui.FontAwareTabLayout
+            <com.pairtodopremium.ui.FontAwareTabLayout
                 fontPath="fonts/Roboto-Light.ttf"
                 android:background="?attr/colorPrimary"
                 android:id="@+id/detail_tabs"

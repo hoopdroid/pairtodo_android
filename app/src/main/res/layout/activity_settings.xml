@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.pairtodobeta.ui.main.profile.stats.StatsActivity">
+    tools:context="com.pairtodopremium.ui.main.profile.stats.StatsActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"

@@ -27,14 +27,14 @@
 
 
 
-        <com.pairtodobeta.ui.main.chat.views.messages.MessagesList
+        <com.pairtodopremium.ui.main.chat.views.messages.MessagesList
             android:id="@+id/messagesList"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_above="@+id/input" />
 
 
-        <com.pairtodobeta.ui.main.chat.views.messages.MessageInput
+        <com.pairtodopremium.ui.main.chat.views.messages.MessageInput
             android:id="@+id/input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

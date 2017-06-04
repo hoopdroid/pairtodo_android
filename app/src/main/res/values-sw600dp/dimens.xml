@@ -1,0 +1,13 @@
+<resources>
+
+    <dimen name="app_bar_height">360dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="image_gift_grid_size">240dp</dimen>
+    <dimen name="image_profile_cycle">280dp</dimen>
+
+    <dimen name="profile_items_margin">64dp</dimen>
+    <dimen name="profile_layout_height">500dp</dimen>
+    <dimen name="profile_content_margin_top">500dp</dimen>
+
+</resources>

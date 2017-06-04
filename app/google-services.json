@@ -8,9 +8,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:585746045819:android:07c5a0b0af8a68fb",
+        "mobilesdk_app_id": "1:585746045819:android:67d1e3b667652a7c",
         "android_client_info": {
-          "package_name": "com.pairtodoalpha"
+          "package_name": "com.pairtodofree"
         }
       },
       "oauth_client": [
@@ -39,9 +39,9 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:585746045819:android:f4de55ea90e67f77",
+        "mobilesdk_app_id": "1:585746045819:android:fadb7ba12a11da4f",
         "android_client_info": {
-          "package_name": "com.pairtodobeta"
+          "package_name": "com.pairtodopremium"
         }
       },
       "oauth_client": [
