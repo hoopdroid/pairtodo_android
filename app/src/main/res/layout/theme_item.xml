@@ -55,7 +55,6 @@
             android:id="@+id/theme_price"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
-            android:text="Бесплатно"
             android:textColor="@color/white"
             android:typeface="normal"
             android:textSize="16sp"

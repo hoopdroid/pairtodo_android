@@ -2,13 +2,13 @@ package com.pairtodopremium.ui.intro;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import com.pairtodopremium.R;
 import com.pairtodopremium.router.ActivityRouter;
+import com.pairtodopremium.ui.BaseActivity;
 
-public class StartActivity extends AppCompatActivity {
+public class StartActivity extends BaseActivity {
 
   Button btnStart;
 

@@ -1,6 +1,7 @@
 package com.pairtodopremium.network.api;
 
 import com.google.gson.GsonBuilder;
+import com.pairtodopremium.BuildConfig;
 import com.pairtodopremium.data.response.EmptyResultResponse;
 import com.pairtodopremium.data.response.chat.ChatDataResponse;
 import com.pairtodopremium.data.response.gifts.GiftsResponse;
@@ -61,7 +62,11 @@ public class ApiManager {
 
   private static void initRetrofit() {
     HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
-    interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
+    if (BuildConfig.DEBUG) {
+      interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
+    } else {
+      interceptor.setLevel(HttpLoggingInterceptor.Level.NONE);
+    }
     okHttpClient = new OkHttpClient.Builder().addInterceptor(interceptor)
         .connectTimeout(10, TimeUnit.SECONDS)
         .readTimeout(10, TimeUnit.SECONDS)

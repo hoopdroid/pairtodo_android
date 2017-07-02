@@ -148,8 +148,20 @@ public class PairTodoApplication extends Application {
                   DataService.init().getNewMessages(new DataService.onMessageGetTask() {
                     @Override public void onMessageResult(List<Message> messages) {
                       if (messages.size() > 0) {
-                        showNotification(context, "Новое сообщение",
-                            messages.get(messages.size() - 1).getText(), ChatActivity.class);
+                        if (!messages.get(messages.size() - 1)
+                            .getText()
+                            .contains(Constants.STICKER)) {
+                          showNotification(context,
+                              context.getString(R.string.new_message_from_couple),
+                              messages.get(messages.size() - 1).getText(), ChatActivity.class);
+                          EventBus.getDefault()
+                              .post(new MessageEvent(messages.get(messages.size() - 1).getText()));
+                        } else {
+                          showNotification(context,
+                              context.getString(R.string.new_message_from_couple),
+                              context.getString(R.string.sticker), ChatActivity.class);
+                          EventBus.getDefault().post(new MessageEvent(""));
+                        }
                       }
                     }
 
@@ -217,6 +229,8 @@ public class PairTodoApplication extends Application {
         new CalligraphyConfig.Builder().setDefaultFontPath("fonts/RobotoSlab-Regular.ttf")
             .setFontAttrId(R.attr.fontPath)
             .build());
+
+    checkNewMessagesInBackground(this, PrefRepository.getToken(this));
   }
 
   public void removeBackgroundJob() {

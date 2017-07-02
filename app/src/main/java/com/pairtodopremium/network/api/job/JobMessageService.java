@@ -4,6 +4,7 @@ import io.hypertrack.smart_scheduler.Job;
 import io.hypertrack.smart_scheduler.SmartScheduler;
 
 public class JobMessageService {
+  public static final int JOB_MESSAGE_ACTIVE_MESSAGES_ID = 5;
   public static final int JOB_MESSAGE_ACTIVE_ID = 1;
   public static final int JOB_MESSAGE_BACKGROUND_ID = 2;
   public static final int JOB_PULSE_BACKGROUND_ID = 3;
@@ -34,6 +35,18 @@ public class JobMessageService {
     return builder.build();
   }
 
+  public Job getNewMessagesInBackGround(SmartScheduler.JobScheduledCallback callback) {
+    Long intervalInMillis = (long) (MESSAGE_SERVICE_ACTIVE_INTERVAL);
+
+    Job.Builder builder =
+        new Job.Builder(JOB_MESSAGE_ACTIVE_MESSAGES_ID, callback, Job.Type.JOB_TYPE_HANDLER,
+            "").setRequiredNetworkType(Job.NetworkType.NETWORK_TYPE_ANY)
+            .setIntervalMillis(intervalInMillis)
+            .setPeriodic(MESSAGE_SERVICE_ACTIVE_INTERVAL);
+
+    return builder.build();
+  }
+
   public Job checkCoupleStatus(SmartScheduler.JobScheduledCallback callback) {
     Long intervalInMillis = (long) (MESSAGE_SERVICE_ACTIVE_INTERVAL);
 
@@ -49,8 +62,8 @@ public class JobMessageService {
     Long intervalInMillis = (long) (MESSAGE_SERVICE_ACTIVE_INTERVAL);
 
     Job.Builder builder =
-        new Job.Builder(JOB_MESSAGE_BACKGROUND_ID, callback, Job.Type.JOB_TYPE_PERIODIC_TASK,
-            JOB_PERIODIC_TASK_TAG).setRequiredNetworkType(Job.NetworkType.NETWORK_TYPE_ANY)
+        new Job.Builder(JOB_MESSAGE_BACKGROUND_ID, callback, Job.Type.JOB_TYPE_HANDLER,
+            "").setRequiredNetworkType(Job.NetworkType.NETWORK_TYPE_ANY)
             .setIntervalMillis(intervalInMillis)
             .setPeriodic(MESSAGE_SERVICE_BACKGROUND_INTERVAL);
 

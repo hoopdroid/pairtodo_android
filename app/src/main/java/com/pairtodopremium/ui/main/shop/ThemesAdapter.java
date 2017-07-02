@@ -46,8 +46,6 @@ public class ThemesAdapter extends RecyclerView.Adapter<ThemesAdapter.ViewHolder
     } else {
       viewHolder.themeName.setText(themeList.get(i).getNameRu());
     }
-
-    viewHolder.themePrice.setText(themeList.get(i).getPrice());
   }
 
   @Override public int getItemCount() {

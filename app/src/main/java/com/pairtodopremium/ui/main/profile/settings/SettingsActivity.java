@@ -2,6 +2,7 @@ package com.pairtodopremium.ui.main.profile.settings;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AlertDialog;
@@ -135,6 +136,15 @@ public class SettingsActivity extends BaseActivity {
     userPhotoEdit.setOnClickListener(new View.OnClickListener() {
       @Override public void onClick(View v) {
         EasyImage.openGallery(SettingsActivity.this, 0);
+      }
+    });
+
+    aboutAppbtn.setOnClickListener(new View.OnClickListener() {
+      @Override public void onClick(View v) {
+        String url = "http://www.pairtodo.com";
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(url));
+        startActivity(i);
       }
     });
   }
