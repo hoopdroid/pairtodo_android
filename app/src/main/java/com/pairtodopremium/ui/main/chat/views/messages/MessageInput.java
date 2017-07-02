@@ -17,7 +17,6 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.pairtodopremium.R;
@@ -141,9 +140,14 @@ public class MessageInput extends RelativeLayout implements View.OnClickListener
                 new StickersAdapter(context, sticker, Arrays.asList(selectedStickers),
                     new Action1<String>() {
                       @Override public void call(String s) {
-                        String stickerCode =
-                            Constants.STICKER.concat(sticker.concat("_" + s.substring(1, 2)));
-                        Toast.makeText(context, stickerCode, Toast.LENGTH_SHORT).show();
+                        String stickerCode;
+                        if (Character.isDigit(s.charAt(3))) {
+                          stickerCode =
+                              Constants.STICKER.concat(sticker.concat("_" + s.substring(1, 2)));
+                        } else {
+                          stickerCode =
+                              Constants.STICKER.concat(sticker.concat("_" + s.substring(1, 3)));
+                        }
                         inputListener.onSubmit(stickerCode);
                       }
                     });

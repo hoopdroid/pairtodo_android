@@ -3,6 +3,8 @@ package com.pairtodopremium.ui.main.chat;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.design.widget.CoordinatorLayout;
+import android.support.design.widget.Snackbar;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
@@ -30,6 +32,7 @@ import java.util.List;
 
 public class ChatActivity extends BaseActivity {
   @Bind(R.id.toolbar) Toolbar mToolbar;
+  @Bind(R.id.coordinator) CoordinatorLayout mRootView;
 
   private MessagesList messagesList;
   private MessagesListAdapter<Message> adapter;
@@ -69,13 +72,10 @@ public class ChatActivity extends BaseActivity {
         if (isNetworkAvailable()) {
           DataService.init().sendMessage(new DataService.onMessageTask() {
             @Override public void onMessageResult() {
-              //Toast.makeText(ChatActivity.this, "message added", Toast.LENGTH_SHORT).show();
             }
 
             @Override public void onMessageError() {
-              //Toast.makeText(ChatActivity.this, "message not delievered", Toast.LENGTH_SHORT).show();
-              //int a = 5;
-
+              showSnackBar(getString(R.string.message_fail));
             }
           }, input.toString().trim(), userToken);
         } else {
@@ -140,7 +140,7 @@ public class ChatActivity extends BaseActivity {
         }
 
         @Override public void onMessageError(String message) {
-          //Toast.makeText(ChatActivity.this, message, Toast.LENGTH_SHORT).show();
+          showSnackBar(getString(R.string.error_try_again));
         }
       }, userToken);
     } else {
@@ -174,7 +174,7 @@ public class ChatActivity extends BaseActivity {
                     }
 
                     @Override public void onMessageError(String message) {
-                      //Toast.makeText(ChatActivity.this, message, Toast.LENGTH_SHORT).show();
+                      showSnackBar(getString(R.string.error_try_again));
                     }
                   }, token);
                 }
@@ -206,5 +206,9 @@ public class ChatActivity extends BaseActivity {
     Log.d("GETTING MESSAGES", "ON STOP AND OPEN BACKGROUND");
     removePeriodicJob();
     super.onStop();
+  }
+
+  void showSnackBar(String message){
+    Snackbar.make(mRootView, message, Snackbar.LENGTH_SHORT);
   }
 }

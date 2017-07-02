@@ -103,4 +103,5 @@
     <string name="you_got_gift">Тебе прислали подарок!</string>
     <string name="you_have_changes">У тебя изменения в задачах!</string>
     <string name="no_gifts">У вас нет подарков!</string>
+  <string name="message_fail">Сообщение не доставлено!</string>
 </resources>

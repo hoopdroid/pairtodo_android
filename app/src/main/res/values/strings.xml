@@ -115,4 +115,5 @@
     <string name="you_got_gift">You got a gift!</string>
     <string name="you_have_changes">You have changes in your tasks!</string>
     <string name="no_gifts">No gifts!</string>
+  <string name="message_fail">Message isnt delievered!</string>
 </resources>

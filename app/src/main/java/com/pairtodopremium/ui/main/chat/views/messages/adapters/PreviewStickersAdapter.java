@@ -38,11 +38,12 @@ public class PreviewStickersAdapter
   }
 
   @Override public void onBindViewHolder(final ViewHolder viewHolder, int i) {
-      if (selectedPosition == viewHolder.getAdapterPosition()) {
-          viewHolder.previewHolder.setBackgroundColor(Color.GRAY);
-      } else {
-          viewHolder.previewHolder.setBackgroundColor(Color.TRANSPARENT);
-      }
+    if (selectedPosition == viewHolder.getAdapterPosition()) {
+      viewHolder.previewHolder.setBackgroundColor(
+          context.getResources().getColor(R.color.colorPrimary));
+    } else {
+      viewHolder.previewHolder.setBackgroundColor(Color.TRANSPARENT);
+    }
 
     Picasso.with(context)
         .load(stickersPreviewList.get(i).getPreview())
