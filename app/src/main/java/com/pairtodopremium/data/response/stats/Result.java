@@ -5,27 +5,22 @@ import com.google.gson.annotations.SerializedName;
 
 public class Result {
 
-@SerializedName("me")
-@Expose
-private Me me;
-@SerializedName("pair")
-@Expose
-private Pair pair;
+  @SerializedName("me") @Expose private Me me;
+  @SerializedName("pair") @Expose private Pair pair;
 
-public Me getMe() {
-return me;
-}
+  public Me getMe() {
+    return me;
+  }
 
-public void setMe(Me me) {
-this.me = me;
-}
+  public void setMe(Me me) {
+    this.me = me;
+  }
 
-public Pair getPair() {
-return pair;
-}
+  public Pair getPair() {
+    return pair;
+  }
 
-public void setPair(Pair pair) {
-this.pair = pair;
-}
-
+  public void setPair(Pair pair) {
+    this.pair = pair;
+  }
 }

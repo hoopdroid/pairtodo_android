@@ -1,6 +1,6 @@
 <com.github.florent37.diagonallayout.DiagonalLayout android:id="@+id/diagonalLayout"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/profile_layout_height"
+    android:layout_height="@dimen/diagonal_layout_height"
     android:layout_alignParentLeft="true"
     android:layout_alignParentStart="true"
     android:layout_alignParentTop="true"

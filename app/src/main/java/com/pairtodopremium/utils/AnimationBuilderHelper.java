@@ -8,7 +8,6 @@ import android.support.v7.widget.RecyclerView;
 import android.util.DisplayMetrics;
 import android.view.Display;
 import android.view.View;
-
 import com.roughike.bottombar.BottomBar;
 
 /**
@@ -17,78 +16,67 @@ import com.roughike.bottombar.BottomBar;
 
 public class AnimationBuilderHelper {
 
-    public static void startIntroToolbarAnimation(Context context, View mToolbar) {
+  public static void startIntroToolbarAnimation(Context context, View mToolbar) {
 
-        int actionbarSize = dpToPx(context,56);
-        mToolbar.setTranslationY(-actionbarSize);
+    int actionbarSize = dpToPx(context, 56);
+    mToolbar.setTranslationY(-actionbarSize);
 
-        mToolbar.animate()
-                .translationY(0)
-                .setDuration(Constants.ANIM_DURATION_TOOLBAR)
-                .setStartDelay(400);
+    mToolbar.animate()
+        .translationY(0)
+        .setDuration(Constants.ANIM_DURATION_TOOLBAR)
+        .setStartDelay(400);
+  }
 
-    }
+  public static void startIntroFabAnimation(Context context, FloatingActionButton fab) {
 
-    public static void startIntroFabAnimation(Context context, FloatingActionButton fab) {
+    int actionbarSize = dpToPx(context, 56);
 
-        int actionbarSize = dpToPx(context,56);
+    fab.setAlpha(0.0f);
 
-        fab.setAlpha(0.0f);
+    fab.setVisibility(View.VISIBLE);
 
-        fab.setVisibility(View.VISIBLE);
+    fab.animate().alpha(1f).setDuration(Constants.ANIM_DURATION_TOOLBAR).setStartDelay(800);
+  }
 
-        fab.animate()
-                .alpha(1f)
-                .setDuration(Constants.ANIM_DURATION_TOOLBAR)
-                .setStartDelay(800);
+  public static void startIntroViewAnimation(Context context, View fab) {
 
-    }
+    int actionbarSize = dpToPx(context, 56);
 
-    public static void startIntroViewAnimation(Context context, View fab) {
+    fab.setAlpha(0.2f);
 
-        int actionbarSize = dpToPx(context,56);
+    fab.setVisibility(View.VISIBLE);
 
-        fab.setAlpha(0.2f);
+    fab.animate().alpha(1f).setDuration(Constants.ANIM_DURATION_TOOLBAR).setStartDelay(500);
+  }
 
-        fab.setVisibility(View.VISIBLE);
+  public static void startIntroBottomAnimation(Context context, BottomBar mBottomBar) {
 
-        fab.animate()
-                .alpha(1f)
-                .setDuration(Constants.ANIM_DURATION_TOOLBAR)
-                .setStartDelay(500);
+    int actionbarSize = dpToPx(context, 56);
+    mBottomBar.setTranslationY(actionbarSize);
+    mBottomBar.animate()
+        .translationY(mBottomBar.getY() - actionbarSize)
+        .setDuration(Constants.ANIM_DURATION_TOOLBAR)
+        .setStartDelay(600);
+  }
 
-    }
+  private static int dpToPx(Context context, int dp) {
+    DisplayMetrics displayMetrics = context.getResources().getDisplayMetrics();
+    int px = Math.round(dp * (displayMetrics.xdpi / DisplayMetrics.DENSITY_DEFAULT));
+    return px;
+  }
 
-    public static void startIntroBottomAnimation(Context context, BottomBar mBottomBar) {
+  public static void startRVAnimation(Activity activity, RecyclerView recyclerView) {
 
-        int actionbarSize = dpToPx(context,56);
-        mBottomBar.setTranslationY(actionbarSize);
-        mBottomBar.animate()
-                .translationY(mBottomBar.getY()-actionbarSize)
-                .setDuration(Constants.ANIM_DURATION_TOOLBAR)
-                .setStartDelay(600);
+    Display display = activity.getWindowManager().getDefaultDisplay();
+    int height = display.getHeight();
 
-    }
-
-    private static int dpToPx(Context context, int dp) {
-        DisplayMetrics displayMetrics =  context.getResources().getDisplayMetrics();
-        int px = Math.round(dp * (displayMetrics.xdpi / DisplayMetrics.DENSITY_DEFAULT));
-        return px;
-    }
-
-    public static void startRVAnimation(Activity activity, RecyclerView recyclerView) {
-
-        Display display = activity.getWindowManager().getDefaultDisplay();
-        int height = display.getHeight();
-
-        recyclerView.setTranslationY(height);
-        recyclerView.setAlpha(0f);
-        recyclerView.animate()
-                .translationY(0)
-                .setDuration(600)
-                .alpha(1f)
-                .setInterpolator(new FastOutSlowInInterpolator())
-                .start();
-    }
-
+    recyclerView.setTranslationY(height);
+    recyclerView.setAlpha(0f);
+    recyclerView.animate()
+        .translationY(0)
+        .setDuration(600)
+        .alpha(1f)
+        .setInterpolator(new FastOutSlowInInterpolator())
+        .start();
+  }
 }

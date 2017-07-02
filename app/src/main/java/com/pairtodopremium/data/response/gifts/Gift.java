@@ -1,38 +1,29 @@
 package com.pairtodopremium.data.response.gifts;
 
 import com.google.auto.value.AutoValue;
+import com.google.gson.Gson;
 import com.google.gson.TypeAdapter;
 import com.google.gson.annotations.SerializedName;
-import com.google.gson.Gson;
 
-@AutoValue
-public abstract class Gift {
+@AutoValue public abstract class Gift {
 
-	@SerializedName("template")
-	public abstract String template();
+  public static TypeAdapter<Gift> typeAdapter(Gson gson) {
+    return new AutoValue_Gift.GsonTypeAdapter(gson);
+  }
 
-	@SerializedName("is_read")
-	public abstract String isRead();
+  @SerializedName("template") public abstract String template();
 
-	@SerializedName("template_name")
-	public abstract String templateName();
+  @SerializedName("is_read") public abstract String isRead();
 
-	@SerializedName("from_id")
-	public abstract String fromId();
+  @SerializedName("template_name") public abstract String templateName();
 
-	@SerializedName("to_id")
-	public abstract String toId();
+  @SerializedName("from_id") public abstract String fromId();
 
-	@SerializedName("id")
-	public abstract String id();
+  @SerializedName("to_id") public abstract String toId();
 
-	@SerializedName("text")
-	public abstract String text();
+  @SerializedName("id") public abstract String id();
 
-	@SerializedName("create_date")
-	public abstract String createDate();
+  @SerializedName("text") public abstract String text();
 
-	public static TypeAdapter<Gift> typeAdapter(Gson gson) {
-		return new AutoValue_Gift.GsonTypeAdapter(gson);
-	}
+  @SerializedName("create_date") public abstract String createDate();
 }

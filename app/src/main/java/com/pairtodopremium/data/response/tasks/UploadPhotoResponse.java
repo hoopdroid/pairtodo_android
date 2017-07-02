@@ -8,11 +8,7 @@ import com.google.gson.annotations.SerializedName;
 
 public class UploadPhotoResponse {
 
+  @SerializedName("image") public String imageUrl;
 
-    @SerializedName("image")
-    public String imageUrl;
-
-    @SerializedName("image_temporary_name")
-    public String imageTempName;
-
+  @SerializedName("image_temporary_name") public String imageTempName;
 }

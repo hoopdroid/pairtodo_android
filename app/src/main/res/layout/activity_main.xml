@@ -7,9 +7,77 @@
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
 
-    <include
-        layout="@layout/app_bar_main"
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context="com.pairtodopremium.ui.main.MainActivity">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/appbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/AppTheme.AppBarOverlay">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.Toolbar
+                        android:title=""
+                        android:id="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="?attr/colorPrimary"
+                        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+                    <ImageView
+                        android:id="@+id/paradelImageToolbar"
+                        android:scaleType="centerCrop"
+                        android:layout_marginStart="4dp"
+                        android:layout_width="150dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:background="@drawable/ic_logo" />
+
+                </FrameLayout>
+
+            </android.support.design.widget.AppBarLayout>
+
+            <FrameLayout
+                android:animateLayoutChanges="true"
+                android:id="@+id/mainFrame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="56dp"
+                android:layout_marginBottom="56dp"
+                >
+
+            </FrameLayout>
+
+        </android.support.design.widget.CoordinatorLayout>
+
+        <com.roughike.bottombar.BottomBar
+            android:elevation="6dp"
+            android:id="@+id/bottomBar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            app:bb_badgeBackgroundColor="?attr/colorPrimary"
+            app:bb_activeTabAlpha="1"
+            app:bb_activeTabColor="?attr/colorAccent"
+            app:bb_inActiveTabColor="@color/colorPrimary"
+            app:bb_showShadow="true"
+            app:bb_tabXmlResource="@xml/bottom_menu" />
+
+
+    </RelativeLayout>
+
 
 </RelativeLayout>

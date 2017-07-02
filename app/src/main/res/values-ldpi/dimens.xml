@@ -3,6 +3,8 @@
 
     <dimen name="profile_items_margin">8dp</dimen>
     <dimen name="image_gift_grid_size">120dp</dimen>
-    <dimen name="image_profile_cycle">100dp</dimen>
+    <dimen name="image_profile_cycle">80dp</dimen>
+    <dimen name="diagonal_layout_height">120dp</dimen>
+
 
 </resources>

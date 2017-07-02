@@ -2,9 +2,11 @@
 <resources>
 
     <dimen name="profile_items_margin">8dp</dimen>
-    <dimen name="image_profile_cycle">120dp</dimen>
+    <dimen name="image_profile_cycle">110dp</dimen>
     <dimen name="profile_layout_height">140dp</dimen>
     <dimen name="profile_content_margin_top">140dp</dimen>
+    <dimen name="diagonal_layout_height">120dp</dimen>
+
 
 
 </resources>

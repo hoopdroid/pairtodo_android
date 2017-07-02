@@ -8,54 +8,42 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
-import com.pairtodopremium.R;
-
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import com.pairtodopremium.R;
 
-public abstract class BaseGiftsFragment extends
-        Fragment implements SwipeRefreshLayout.OnRefreshListener {
+public abstract class BaseGiftsFragment extends Fragment
+    implements SwipeRefreshLayout.OnRefreshListener {
 
-    @Bind(R.id.rv)
-    RecyclerView mGiftList;
-    @Bind(R.id.swipe_refresh)
-    SwipeRefreshLayout mGiftsSwipeContainer;
-    @Bind(R.id.no_gifts_view)
-    ViewGroup noGiftsView;
+  @Bind(R.id.rv) RecyclerView mGiftList;
+  @Bind(R.id.swipe_refresh) SwipeRefreshLayout mGiftsSwipeContainer;
+  @Bind(R.id.no_gifts_view) ViewGroup noGiftsView;
 
-    public BaseGiftsFragment() {
-    }
+  public BaseGiftsFragment() {
+  }
 
+  @Override public View onCreateView(LayoutInflater inflater, ViewGroup container,
+      Bundle savedInstanceState) {
+    View convertView = inflater.inflate(R.layout.fragment_gifts, container, false);
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View convertView = inflater.inflate(R.layout.fragment_gifts, container, false);
+    initViewElements(convertView);
 
-        initViewElements(convertView);
+    if (isAdded()) getGifts();
 
-        if (isAdded())
-            getGifts();
+    return convertView;
+  }
 
-        return convertView;
-    }
+  private void initViewElements(View convertView) {
+    ButterKnife.bind(this, convertView);
+    mGiftList.setHasFixedSize(true);
+    RecyclerView.LayoutManager layoutManager = new GridLayoutManager(getActivity(), 1);
+    mGiftList.setLayoutManager(layoutManager);
+    mGiftsSwipeContainer.setOnRefreshListener(this);
+  }
 
-    private void initViewElements(View convertView) {
-        ButterKnife.bind(this, convertView);
-        mGiftList.setHasFixedSize(true);
-        RecyclerView.LayoutManager layoutManager = new GridLayoutManager(getActivity(), 1);
-        mGiftList.setLayoutManager(layoutManager);
-        mGiftsSwipeContainer.setOnRefreshListener(this);
+  @Override public void onRefresh() {
+    getGifts();
+  }
 
-
-    }
-
-    @Override
-    public void onRefresh() {
-        getGifts();
-    }
-
-    protected abstract void getGifts();
-
-
+  protected abstract void getGifts();
 }

@@ -1,7 +1,6 @@
 package com.pairtodopremium.data.response.chat;
 
 import android.support.annotation.Nullable;
-
 import com.google.auto.value.AutoValue;
 import com.google.gson.Gson;
 import com.google.gson.TypeAdapter;
@@ -10,77 +9,63 @@ import com.pairtodopremium.ui.main.chat.fixtures.FixturesData;
 import com.pairtodopremium.ui.main.chat.models.DefaultUser;
 import com.stfalcon.chatkit.commons.models.IMessage;
 import com.stfalcon.chatkit.commons.models.IUser;
-
 import java.util.Date;
 
-@AutoValue
-public abstract class Message extends FixturesData implements IMessage {
+@AutoValue public abstract class Message extends FixturesData implements IMessage {
 
-	@SerializedName("is_read")
-	public abstract String isRead();
+  public DefaultUser userMessage;
 
-	@SerializedName("from_id")
-	public abstract String fromId();
+  public static TypeAdapter<Message> typeAdapter(Gson gson) {
+    return new AutoValue_Message.GsonTypeAdapter(gson);
+  }
 
-	@SerializedName("to_id")
-	public abstract String toId();
+  public static Message create(String isRead, String fromId, String toId, String jobId, String id,
+      String message, String createDate) {
+    return new AutoValue_Message(isRead, fromId, toId, jobId, id, message, createDate);
+  }
 
-	@SerializedName("job_id")
-	@Nullable
-	public abstract String jobId();
+  @SerializedName("is_read") public abstract String isRead();
 
-	@SerializedName("id")
-	public abstract String id();
+  @SerializedName("from_id") public abstract String fromId();
 
-	@SerializedName("message")
-	public abstract String message();
+  @SerializedName("to_id") public abstract String toId();
 
-	@SerializedName("create_date")
-	public abstract String createDate();
+  @SerializedName("job_id") @Nullable public abstract String jobId();
 
-	public DefaultUser userMessage;
+  @SerializedName("id") public abstract String id();
 
-	public DefaultUser getUserMessage() {
-		return userMessage;
-	}
+  @SerializedName("message") public abstract String message();
 
-	public void setUserMessage(DefaultUser userMessage) {
-		this.userMessage = userMessage;
-	}
+  @SerializedName("create_date") public abstract String createDate();
 
-	public static TypeAdapter<Message> typeAdapter(Gson gson) {
-		return new AutoValue_Message.GsonTypeAdapter(gson);
-	}
+  public DefaultUser getUserMessage() {
+    return userMessage;
+  }
 
-	public static Message create(String isRead, String fromId, String toId, String jobId, String id,
-								 String message, String createDate){
-		return new AutoValue_Message(isRead, fromId, toId, jobId, id, message, createDate);
-	}
+  public void setUserMessage(DefaultUser userMessage) {
+    this.userMessage = userMessage;
+  }
 
-	public abstract Message withMessage(String message);
+  public abstract Message withMessage(String message);
 
-	@Override
-	public Date getCreatedAt() {
-		long time = System.currentTimeMillis();
-		return createDate().equals("") ? new Date(time): new Date(Long.parseLong(createDate())*1000);
-	}
+  @Override public Date getCreatedAt() {
+    long time = System.currentTimeMillis();
+    return createDate().equals("") ? new Date(time) : new Date(Long.parseLong(createDate()) * 1000);
+  }
 
-	@Override
-	public String getId() {
-		return fromId();
-	}
+  @Override public String getId() {
+    return fromId();
+  }
 
-	@Override
-	public IUser getUser() {
-		return userMessage;
-	}
+  @Override public IUser getUser() {
+    return userMessage;
+  }
 
-	@Override
-	public String getText() {
-		return message();
-	}
+  @Override public String getText() {
+    return message();
+  }
 
-	public String getStatus() {
-		return "Sent";
-	}
+  public String getStatus() {
+    return "Sent";
+  }
 }

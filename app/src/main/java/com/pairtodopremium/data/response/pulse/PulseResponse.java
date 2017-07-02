@@ -5,16 +5,13 @@ import com.google.gson.Gson;
 import com.google.gson.TypeAdapter;
 import com.google.gson.annotations.SerializedName;
 
-@AutoValue
-public abstract class PulseResponse {
+@AutoValue public abstract class PulseResponse {
 
-    public static TypeAdapter<PulseResponse> typeAdapter(Gson gson) {
-        return new AutoValue_PulseResponse.GsonTypeAdapter(gson);
-    }
+  public static TypeAdapter<PulseResponse> typeAdapter(Gson gson) {
+    return new AutoValue_PulseResponse.GsonTypeAdapter(gson);
+  }
 
-    @SerializedName("result")
-    public abstract Pulse result();
+  @SerializedName("result") public abstract Pulse result();
 
-    @SerializedName("error")
-    public abstract Error error();
+  @SerializedName("error") public abstract Error error();
 }

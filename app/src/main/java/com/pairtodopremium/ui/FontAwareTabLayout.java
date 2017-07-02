@@ -8,9 +8,7 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
 import com.pairtodopremium.R;
-
 import uk.co.chrisjenx.calligraphy.CalligraphyUtils;
 
 public final class FontAwareTabLayout extends TabLayout {
@@ -46,8 +44,7 @@ public final class FontAwareTabLayout extends TabLayout {
         : attrs.getAttributeValue(null, attributeName);
   }
 
-  @Override
-  public void addTab(@NonNull Tab tab, int position, boolean setSelected) {
+  @Override public void addTab(@NonNull Tab tab, int position, boolean setSelected) {
     super.addTab(tab, position, setSelected);
 
     ViewGroup mainView = (ViewGroup) getChildAt(0);
